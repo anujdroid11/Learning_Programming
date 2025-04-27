@@ -5,6 +5,11 @@ fun main() {
     val b = 54
 
     println(a)  */
+    println("Hola World")
+
+    var x: Int = 2
+    println(x)
+
 
 
 }
