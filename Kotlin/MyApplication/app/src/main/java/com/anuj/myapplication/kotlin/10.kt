@@ -13,7 +13,7 @@ open class Animal(val name: String) {
 }
 
 
-class Dog(name: String) : Animal(name){
+class Dog1(name: String) : Animal(name){
 
     fun bark(){
         println("$name is barking ")
@@ -21,7 +21,7 @@ class Dog(name: String) : Animal(name){
 
 }
 
-class Cat(name: String) : Animal(name) {
+class Cat1(name: String) : Animal(name) {
 
     fun meow(){
         println("$name is meowing ")
@@ -30,8 +30,8 @@ class Cat(name: String) : Animal(name) {
 }
 
 fun main() {
-    var dog = Dog("Buddy")
-    var cat = Cat("Wishker")
+    var dog = Dog1("Buddy")
+    var cat = Cat1("Wishker")
 
     dog.eat()
     dog.bark()
