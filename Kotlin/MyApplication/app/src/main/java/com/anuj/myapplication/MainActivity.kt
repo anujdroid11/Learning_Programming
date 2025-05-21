@@ -19,12 +19,15 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyApplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Anuj Singh",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+                    content = { innerPadding ->
+                        Greeting(
+                            name = "Anuj Singh",
+                            modifier = Modifier.padding(innerPadding)
+                        )
+                    }
+                )
             }
         }
     }
